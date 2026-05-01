@@ -28,6 +28,16 @@ import catamaranSide from "@/assets/catamaran-side.jpg";
 import happyYacht from "@/assets/happy-yacht.jpg";
 import quadBikes from "@/assets/quad-bikes.jpg";
 import marinaDinner from "@/assets/marina-dinner.jpg";
+import gPoros from "@/assets/gallery/poros.jpg";
+import gYachtsBay from "@/assets/gallery/yachts-bay.jpg";
+import gSunbathing from "@/assets/gallery/sunbathing.jpg";
+import gTerrace from "@/assets/gallery/terrace.jpg";
+import gBalcony from "@/assets/gallery/balcony.jpg";
+import gCliffs from "@/assets/gallery/cliffs.jpg";
+import gSunsetYachts from "@/assets/gallery/sunset-yachts.jpg";
+import gGirlSailing from "@/assets/gallery/girl-sailing.jpg";
+import gEgina from "@/assets/gallery/egina.jpg";
+import gMarinaTown from "@/assets/gallery/marina-town.jpg";
 import yachtLayout from "@/assets/yacht-layout.png";
 import catamaranLayout from "@/assets/catamaran-layout.png";
 import logoPadelBanda from "@/assets/logo-padelbanda.png";
@@ -317,6 +327,48 @@ const Index = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="py-20 md:py-28">
+        <div className="container mx-auto">
+          <div className="text-center mb-12 max-w-2xl mx-auto">
+            <span className="text-sm uppercase tracking-[0.2em] text-primary font-semibold">Атмосфера</span>
+            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-navy text-balance">
+              Это будет выглядеть примерно так
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4">
+              Бирюзовые бухты, белые домики, паруса на закате и моменты, ради которых стоит ехать.
+            </p>
+          </div>
+
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4 [column-fill:_balance]">
+            {[
+              { src: gYachtsBay, alt: "Флотилия яхт в бирюзовой бухте" },
+              { src: gGirlSailing, alt: "Девушка под парусом на яхте" },
+              { src: gPoros, alt: "Белые домики греческого острова" },
+              { src: gSunsetYachts, alt: "Яхты в марине на розовом закате" },
+              { src: gTerrace, alt: "Уютная греческая терраса с видом на море" },
+              { src: gCliffs, alt: "Скалы и бухты на закате" },
+              { src: gMarinaTown, alt: "Марина с яхтами и черепичные крыши" },
+              { src: gSunbathing, alt: "Девушка загорает на носу яхты" },
+              { src: gEgina, alt: "Эгейское море и яхты у острова" },
+              { src: gBalcony, alt: "Балкончик с видом на Эгейское море" },
+            ].map((img, i) => (
+              <div
+                key={i}
+                className="mb-3 md:mb-4 break-inside-avoid overflow-hidden rounded-2xl shadow-card group"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
