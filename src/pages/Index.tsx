@@ -166,6 +166,8 @@ const Index = () => {
           <a href="#top" className="flex items-center gap-2">
             <img src={logoPadelBanda} alt="Padel Banda" className="w-10 h-10 rounded-xl object-contain" />
             <span className="font-serif text-xl font-semibold text-navy">Padel Banda</span>
+            <span className="hidden sm:inline text-navy/30 mx-1">×</span>
+            <img src={logoFleet5} alt="Fleet5" className="hidden sm:block h-7 object-contain" />
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
             <a href="#about" className="hover:text-primary transition-colors">О поездке</a>
@@ -236,11 +238,11 @@ const Index = () => {
               { icon: Calendar, k: "8", l: "дней приключений" },
               { icon: MapPin, k: "6+", l: "греческих островов" },
               { icon: Users, k: "Своя", l: "каюта на двоих" },
-              { icon: Anchor, k: "Флотилия", l: "яхт и катамаранов" },
+              { icon: Anchor, k: "Флот", l: "яхт и катамаранов" },
             ].map((f, i) => (
               <div key={i} className="text-center p-6 rounded-2xl bg-card shadow-card">
                 <f.icon className="w-8 h-8 text-primary mx-auto mb-3" />
-                <div className="text-3xl md:text-4xl font-serif font-bold text-navy">{f.k}</div>
+                <div className="text-3xl md:text-4xl font-serif font-bold text-navy break-words">{f.k}</div>
                 <div className="text-sm text-muted-foreground mt-1">{f.l}</div>
               </div>
             ))}
@@ -268,8 +270,8 @@ const Index = () => {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src={happyYacht} alt="Счастливые друзья на яхте на закате" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover translate-y-6" />
-              <img src={hydra} alt="Остров Идра с воздуха" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover" />
+              <img src={happyYacht} alt="Счастливые друзья на яхте на закате" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover w-full" />
+              <img src={hydra} alt="Остров Идра с воздуха" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover w-full" />
             </div>
           </div>
         </div>
