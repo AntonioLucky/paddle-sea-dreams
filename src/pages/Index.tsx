@@ -336,9 +336,6 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12 max-w-2xl mx-auto">
             <span className="text-sm uppercase tracking-[0.2em] text-primary font-semibold">Атмосфера</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-navy text-balance">
-              Это будет выглядеть примерно так
-            </h2>
             <p className="text-lg text-muted-foreground mt-4">
               Бирюзовые бухты, белые домики, паруса на закате и моменты, ради которых стоит ехать.
             </p>
@@ -471,7 +468,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center rounded-[2rem] bg-gradient-soft p-10 md:p-16 shadow-card">
             <Sparkles className="w-10 h-10 text-accent mx-auto mb-4" />
             <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4 text-balance">
-              Готовы войти в банду?
+              Запрыгивайте на борт
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Количество кают ограничено. Бронируйте заранее, чтобы выбрать лучшую.
