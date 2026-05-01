@@ -58,13 +58,13 @@ const days = [
     items: [
       { t: "09:00", d: "Выход в море. По пути купаемся, при ветре поднимаем паруса" },
       { t: "16:00", d: "Швартовка на Поросе. Короткий трек к башне с панорамным видом" },
-      { t: "19:00", d: "«Ужин знакомств» у Миши — настоящая греческая кухня" },
+      { t: "19:00", d: "«Ужин знакомств» — настоящая греческая кухня" },
     ],
   },
   {
     n: 3,
     date: "22 июня",
-    title: "Квадроциклы и White Party",
+    title: "Эрмиони: квадроциклы и White Party",
     icon: PartyPopper,
     image: quadBikes,
     items: [
@@ -83,7 +83,7 @@ const days = [
       { t: "10:00", d: "Курс на Специс. По дороге купаемся в диких бухтах" },
       { t: "15:00", d: "Гонка на «тузиках» — победителей ждут крутые призы" },
       { t: "17:00", d: "Швартовка, ужин в одном из ресторанчиков на берегу" },
-      { t: "22:00", d: "Дискотека на пляже с приглашённым DJ — нашим другом и фанатом паддла" },
+      { t: "22:00", d: "Дискотека на пляже" },
     ],
   },
   {
@@ -218,14 +218,6 @@ const Index = () => {
                 <a href="#timeline">Смотреть программу</a>
               </Button>
             </div>
-            <div className="mt-10 flex items-center gap-5 flex-wrap">
-              <span className="text-xs uppercase tracking-[0.2em] text-white/80">Организаторы</span>
-              <div className="flex items-center gap-4 bg-background/90 backdrop-blur rounded-full px-5 py-2.5 shadow-soft">
-                <img src={logoPadelBanda} alt="Padel Banda" className="h-9 w-9 object-contain" />
-                <span className="text-navy/30 text-xl">×</span>
-                <img src={logoFleet5} alt="Fleet5" className="h-7 object-contain" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -310,8 +302,8 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 max-w-2xl mx-auto">
             <span className="text-sm uppercase tracking-[0.2em] text-primary font-semibold">План поездки</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-navy text-balance">
-              8 дней, которые вы будете вспоминать всю зиму
+              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-navy text-balance">
+              8 дней, которые вы будете вспоминать всю жизнь
             </h2>
           </div>
 
