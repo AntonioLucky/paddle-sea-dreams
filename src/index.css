@@ -8,35 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Padel Banda — light, sea & sand palette */
+    --background: 40 33% 98%;          /* ivory */
+    --foreground: 213 65% 15%;         /* deep navy */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 213 65% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 213 65% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 188 85% 38%;            /* sea turquoise */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 188 85% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 196 75% 92%;          /* sky */
+    --secondary-foreground: 213 65% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 30% 94%;
+    --muted-foreground: 213 20% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 14 95% 64%;              /* sunset coral */
+    --accent-foreground: 0 0% 100%;
+
+    --sand: 38 60% 88%;
+    --navy: 213 65% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 200 25% 88%;
+    --input: 200 25% 88%;
+    --ring: 188 85% 38%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(213 65% 15% / 0.55) 0%, hsl(188 85% 38% / 0.35) 100%);
+    --gradient-sea: linear-gradient(135deg, hsl(188 85% 38%), hsl(196 90% 55%));
+    --gradient-sunset: linear-gradient(135deg, hsl(14 95% 64%), hsl(28 95% 60%));
+    --gradient-soft: linear-gradient(180deg, hsl(196 75% 96%), hsl(40 33% 98%));
+
+    --shadow-soft: 0 10px 30px -10px hsl(213 65% 15% / 0.15);
+    --shadow-glow: 0 20px 60px -20px hsl(188 85% 38% / 0.45);
+    --shadow-card: 0 4px 20px -8px hsl(213 65% 15% / 0.12);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +117,28 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply tracking-tight;
   }
 }
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .bg-gradient-sea { background: var(--gradient-sea); }
+  .bg-gradient-sunset { background: var(--gradient-sunset); }
+  .bg-gradient-soft { background: var(--gradient-soft); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up { animation: fade-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) both; }
