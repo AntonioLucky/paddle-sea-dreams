@@ -190,7 +190,7 @@ const Index = () => {
           alt="Парусная яхта в греческой бухте на закате"
           width={1920}
           height={1080}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-[30%_center] md:object-center"
         />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="container mx-auto relative z-10 py-20">
