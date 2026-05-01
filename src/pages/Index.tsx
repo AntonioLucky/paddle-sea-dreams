@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { CabinLayout } from "@/components/CabinLayout";
 import {
   Anchor,
   Wine,
@@ -20,13 +19,16 @@ import {
 } from "lucide-react";
 
 import heroYacht from "@/assets/hero-yacht.jpg";
-import padelFriends from "@/assets/padel-friends.jpg";
 import whiteParty from "@/assets/white-party.jpg";
 import hydra from "@/assets/hydra.jpg";
 import wildBay from "@/assets/wild-bay.jpg";
 import bbqYacht from "@/assets/bbq-yacht.jpg";
 import yachtSide from "@/assets/yacht-side.jpg";
 import catamaranSide from "@/assets/catamaran-side.jpg";
+import happyYacht from "@/assets/happy-yacht.jpg";
+import quadBikes from "@/assets/quad-bikes.jpg";
+import yachtLayout from "@/assets/yacht-layout.png";
+import catamaranLayout from "@/assets/catamaran-layout.png";
 
 const TG_URL = "https://t.me/verch_i";
 
@@ -62,7 +64,7 @@ const days = [
     date: "22 июня",
     title: "Квадроциклы и White Party",
     icon: PartyPopper,
-    image: whiteParty,
+    image: quadBikes,
     items: [
       { t: "10:00", d: "Исследуем остров Порос на квадроциклах (~30 € / чел., доп. оплата)" },
       { t: "13:00", d: "Выходим в море курсом на Эрмиони" },
@@ -74,7 +76,7 @@ const days = [
     date: "23 июня",
     title: "Специс и пляжная дискотека",
     icon: Trophy,
-    image: padelFriends,
+    image: whiteParty,
     items: [
       { t: "10:00", d: "Курс на Специс. По дороге купаемся в диких бухтах" },
       { t: "15:00", d: "Гонка на «тузиках» — победителей ждут крутые призы" },
@@ -258,7 +260,7 @@ const Index = () => {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src={padelFriends} alt="Друзья играют в паддел" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover translate-y-6" />
+              <img src={happyYacht} alt="Счастливые друзья на яхте на закате" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover translate-y-6" />
               <img src={hydra} alt="Остров Идра с воздуха" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover" />
             </div>
           </div>
@@ -337,18 +339,14 @@ const Index = () => {
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-navy mb-2">Парусная яхта</h3>
               <p className="text-muted-foreground mb-6">Классика. 4 гостевые каюты, общий салон, кокпит для встреч на закате.</p>
-              <CabinLayout
-                title="Расположение кают"
-                shape="yacht"
-                totalGuests={8}
-                cabins={[
-                  { label: "Каюта 1 · нос", type: "double" },
-                  { label: "Каюта 2", type: "double" },
-                  { label: "Каюта 3", type: "double" },
-                  { label: "Каюта 4 · корма", type: "double" },
-                  { label: "Капитан", type: "crew" },
-                ]}
-              />
+              <div className="rounded-2xl bg-card p-4 shadow-soft border border-border/50">
+                <div className="flex items-center justify-between mb-3 px-2">
+                  <h4 className="font-semibold text-navy">Расположение кают</h4>
+                  <span className="text-xs uppercase tracking-wider text-muted-foreground">до 8 гостей</span>
+                </div>
+                <img src={yachtLayout} alt="Схема кают парусной яхты Oceanis 46.1" loading="lazy" className="w-full h-auto" />
+                <p className="text-xs text-muted-foreground mt-3 text-center">4 двухместные каюты · салон · камбуз · каюта капитана</p>
+              </div>
             </div>
 
             {/* CAT CARD */}
@@ -358,18 +356,14 @@ const Index = () => {
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-navy mb-2">Катамаран</h3>
               <p className="text-muted-foreground mb-6">Простор и стабильность. Два корпуса, большой салон, носовая сетка для загара.</p>
-              <CabinLayout
-                title="Расположение кают"
-                shape="catamaran"
-                totalGuests={8}
-                cabins={[
-                  { label: "Каюта 1", type: "double" },
-                  { label: "Каюта 2", type: "double" },
-                  { label: "Каюта 3", type: "double" },
-                  { label: "Каюта 4", type: "double" },
-                  { label: "Капитан", type: "crew" },
-                ]}
-              />
+              <div className="rounded-2xl bg-card p-4 shadow-soft border border-border/50">
+                <div className="flex items-center justify-between mb-3 px-2">
+                  <h4 className="font-semibold text-navy">Расположение кают</h4>
+                  <span className="text-xs uppercase tracking-wider text-muted-foreground">до 8 гостей</span>
+                </div>
+                <img src={catamaranLayout} alt="Схема кают катамарана Dufour 44" loading="lazy" className="w-full h-auto" />
+                <p className="text-xs text-muted-foreground mt-3 text-center">4 двухместные каюты · просторный салон · каюта капитана</p>
+              </div>
             </div>
           </div>
         </div>
