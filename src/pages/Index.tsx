@@ -275,6 +275,34 @@ const Index = () => {
         </div>
       </section>
 
+      {/* PARTNERS */}
+      <section className="py-16 border-y border-border/50 bg-card">
+        <div className="container mx-auto">
+          <div className="text-center mb-8">
+            <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground font-semibold">
+              Поездку организуют
+            </span>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+            <div className="flex flex-col items-center gap-3">
+              <img src={logoPadelBanda} alt="Padel Banda" className="h-24 w-24 object-contain" />
+              <div className="text-sm font-semibold text-navy">Padel Banda</div>
+              <div className="text-xs text-muted-foreground max-w-[200px] text-center">
+                Комьюнити паддел-игроков, которые любят жить ярко
+              </div>
+            </div>
+            <div className="text-3xl text-primary/40 font-serif hidden md:block">×</div>
+            <div className="flex flex-col items-center gap-3">
+              <img src={logoFleet5} alt="Fleet5" className="h-24 object-contain" />
+              <div className="text-sm font-semibold text-navy">Fleet5</div>
+              <div className="text-xs text-muted-foreground max-w-[220px] text-center">
+                Многолетний опыт организации яхтенных путешествий
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TIMELINE */}
       <section id="timeline" className="py-20 md:py-28 bg-gradient-soft">
         <div className="container mx-auto">
