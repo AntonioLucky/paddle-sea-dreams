@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { CabinLayout } from "@/components/CabinLayout";
 import {
   Anchor,
   Wine,
@@ -20,13 +19,16 @@ import {
 } from "lucide-react";
 
 import heroYacht from "@/assets/hero-yacht.jpg";
-import padelFriends from "@/assets/padel-friends.jpg";
 import whiteParty from "@/assets/white-party.jpg";
 import hydra from "@/assets/hydra.jpg";
 import wildBay from "@/assets/wild-bay.jpg";
 import bbqYacht from "@/assets/bbq-yacht.jpg";
 import yachtSide from "@/assets/yacht-side.jpg";
 import catamaranSide from "@/assets/catamaran-side.jpg";
+import happyYacht from "@/assets/happy-yacht.jpg";
+import quadBikes from "@/assets/quad-bikes.jpg";
+import yachtLayout from "@/assets/yacht-layout.png";
+import catamaranLayout from "@/assets/catamaran-layout.png";
 
 const TG_URL = "https://t.me/verch_i";
 
@@ -62,7 +64,7 @@ const days = [
     date: "22 июня",
     title: "Квадроциклы и White Party",
     icon: PartyPopper,
-    image: whiteParty,
+    image: quadBikes,
     items: [
       { t: "10:00", d: "Исследуем остров Порос на квадроциклах (~30 € / чел., доп. оплата)" },
       { t: "13:00", d: "Выходим в море курсом на Эрмиони" },
@@ -74,7 +76,7 @@ const days = [
     date: "23 июня",
     title: "Специс и пляжная дискотека",
     icon: Trophy,
-    image: padelFriends,
+    image: whiteParty,
     items: [
       { t: "10:00", d: "Курс на Специс. По дороге купаемся в диких бухтах" },
       { t: "15:00", d: "Гонка на «тузиках» — победителей ждут крутые призы" },
