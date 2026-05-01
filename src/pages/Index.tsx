@@ -29,6 +29,8 @@ import happyYacht from "@/assets/happy-yacht.jpg";
 import quadBikes from "@/assets/quad-bikes.jpg";
 import yachtLayout from "@/assets/yacht-layout.png";
 import catamaranLayout from "@/assets/catamaran-layout.png";
+import logoPadelBanda from "@/assets/logo-padelbanda.png";
+import logoFleet5 from "@/assets/logo-fleet5.png";
 
 const TG_URL = "https://t.me/verch_i";
 
@@ -162,9 +164,7 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
         <div className="container mx-auto flex items-center justify-between py-4">
           <a href="#top" className="flex items-center gap-2">
-            <span className="w-9 h-9 rounded-full bg-gradient-sea grid place-items-center shadow-glow">
-              <Anchor className="w-5 h-5 text-primary-foreground" />
-            </span>
+            <img src={logoPadelBanda} alt="Padel Banda" className="w-10 h-10 rounded-xl object-contain" />
             <span className="font-serif text-xl font-semibold text-navy">Padel Banda</span>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
@@ -216,6 +216,14 @@ const Index = () => {
                 <a href="#timeline">Смотреть программу</a>
               </Button>
             </div>
+            <div className="mt-10 flex items-center gap-5 flex-wrap">
+              <span className="text-xs uppercase tracking-[0.2em] text-white/80">Организаторы</span>
+              <div className="flex items-center gap-4 bg-background/90 backdrop-blur rounded-full px-5 py-2.5 shadow-soft">
+                <img src={logoPadelBanda} alt="Padel Banda" className="h-9 w-9 object-contain" />
+                <span className="text-navy/30 text-xl">×</span>
+                <img src={logoFleet5} alt="Fleet5" className="h-7 object-contain" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -262,6 +270,34 @@ const Index = () => {
             <div className="grid grid-cols-2 gap-4">
               <img src={happyYacht} alt="Счастливые друзья на яхте на закате" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover translate-y-6" />
               <img src={hydra} alt="Остров Идра с воздуха" loading="lazy" className="rounded-3xl shadow-card aspect-[3/4] object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PARTNERS */}
+      <section className="py-16 border-y border-border/50 bg-card">
+        <div className="container mx-auto">
+          <div className="text-center mb-8">
+            <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground font-semibold">
+              Поездку организуют
+            </span>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+            <div className="flex flex-col items-center gap-3">
+              <img src={logoPadelBanda} alt="Padel Banda" className="h-24 w-24 object-contain" />
+              <div className="text-sm font-semibold text-navy">Padel Banda</div>
+              <div className="text-xs text-muted-foreground max-w-[200px] text-center">
+                Комьюнити паддел-игроков, которые любят жить ярко
+              </div>
+            </div>
+            <div className="text-3xl text-primary/40 font-serif hidden md:block">×</div>
+            <div className="flex flex-col items-center gap-3">
+              <img src={logoFleet5} alt="Fleet5" className="h-24 object-contain" />
+              <div className="text-sm font-semibold text-navy">Fleet5</div>
+              <div className="text-xs text-muted-foreground max-w-[220px] text-center">
+                Многолетний опыт организации яхтенных путешествий
+              </div>
             </div>
           </div>
         </div>
@@ -445,11 +481,15 @@ const Index = () => {
 
       {/* FOOTER */}
       <footer className="py-10 border-t border-border/50">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <Anchor className="w-4 h-4 text-primary" />
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
+          <div className="flex items-center gap-3">
+            <img src={logoPadelBanda} alt="Padel Banda" className="w-8 h-8 object-contain" />
             <span className="font-serif text-base text-navy">Padel Banda</span>
             <span>· Yacht Week 2026</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span>в партнёрстве с</span>
+            <img src={logoFleet5} alt="Fleet5" className="h-6 object-contain" />
           </div>
           <div>Сделано с ❤️ для тех, кто живёт на полной скорости</div>
         </div>
