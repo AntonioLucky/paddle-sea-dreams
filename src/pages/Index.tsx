@@ -478,13 +478,13 @@ const Index = () => {
       <footer className="py-10 border-t border-border/50">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
           <div className="flex items-center gap-3">
-            <img src={logoPadelBanda} alt="Padel Banda" className="w-8 h-8 object-contain" />
-            <span className="font-serif text-base text-navy">Padel Banda</span>
+            <img src={logoFleet5} alt="Fleet5" className="h-6 object-contain" />
             <span>· Yacht Week 2026</span>
           </div>
           <div className="flex items-center gap-3">
             <span>в партнёрстве с</span>
-            <img src={logoFleet5} alt="Fleet5" className="h-6 object-contain" />
+            <img src={logoPadelBanda} alt="Padel Banda" className="w-8 h-8 object-contain" />
+            <span className="font-serif text-base text-navy">Padel Banda</span>
           </div>
           <div>Сделано с ❤️ для тех, кто живёт на полной скорости</div>
         </div>
