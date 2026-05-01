@@ -27,6 +27,7 @@ import yachtSide from "@/assets/yacht-side.jpg";
 import catamaranSide from "@/assets/catamaran-side.jpg";
 import happyYacht from "@/assets/happy-yacht.jpg";
 import quadBikes from "@/assets/quad-bikes.jpg";
+import marinaDinner from "@/assets/marina-dinner.jpg";
 import yachtLayout from "@/assets/yacht-layout.png";
 import catamaranLayout from "@/assets/catamaran-layout.png";
 import logoPadelBanda from "@/assets/logo-padelbanda.png";
@@ -116,7 +117,7 @@ const days = [
     date: "26 июня",
     title: "Возвращение в Алимос",
     icon: Wine,
-    image: heroYacht,
+    image: marinaDinner,
     items: [
       { t: "08:00", d: "Снимаемся с якоря" },
       { t: "09:00", d: "Завтрак в одном из ресторанчиков городка Пердика" },
